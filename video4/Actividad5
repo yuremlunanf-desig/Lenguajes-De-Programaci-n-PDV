@@ -1,0 +1,52 @@
+from tkinter import *
+
+# 1. Crear la ventana principal (Raíz)
+root = Tk()
+root.title("Formulario con Grid y Entry - Video 4")
+
+# 2. Crear y empaquetar el Frame contenedor
+miFrame = Frame(root)
+miFrame.pack()
+
+# ----------------- FILA 0: NOMBRE -----------------
+nombreLabel = Label(miFrame, text="Nombre:")
+# Posicionar la etiqueta en la Fila 0, Columna 0
+nombreLabel.grid(row=0, column=0, sticky="e", padx=10, pady=10)
+
+# Crear el cuadro de texto (Entry) para Nombre
+cuadroNombre = Entry(miFrame)
+# Posicionar el campo de entrada en la Fila 0, Columna 1
+cuadroNombre.grid(row=0, column=1, padx=10, pady=10)
+# Personalizar el cuadro: texto en color rojo y alineado a la derecha
+cuadroNombre.config(fg="red", justify="right")
+
+# ----------------- FILA 1: CONTRASEÑA -----------------
+passLabel = Label(miFrame, text="Password:")
+passLabel.grid(row=1, column=0, sticky="e", padx=10, pady=10)
+
+# Crear el cuadro de entrada para la contraseña
+cuadroPass = Entry(miFrame)
+cuadroPass.grid(row=1, column=1, padx=10, pady=10)
+# Enmascarar los caracteres escritos para que muestre asteriscos por seguridad
+cuadroPass.config(show="*")
+
+# ----------------- FILA 2: APELLIDO -----------------
+# Crear la etiqueta para Apellido
+apellidoLabel = Label(miFrame, text="Apellido:")
+apellidoLabel.grid(row=2, column=0, sticky="e", padx=10, pady=10)
+
+# Crear el cuadro de entrada para Apellido
+cuadroApellido = Entry(miFrame)
+cuadroApellido.grid(row=2, column=1, padx=10, pady=10)
+
+# ----------------- FILA 3: DIRECCIÓN -----------------
+# Crear la etiqueta para Dirección
+direccionLabel = Label(miFrame, text="Dirección:")
+direccionLabel.grid(row=3, column=0, sticky="e", padx=10, pady=10)
+
+# Crear el cuadro de entrada para Dirección
+cuadroDireccion = Entry(miFrame)
+cuadroDireccion.grid(row=3, column=1, padx=10, pady=10)
+
+# 3. Bucle principal para mantener activa la interfaz
+root.mainloop()

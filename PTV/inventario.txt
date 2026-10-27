@@ -1,0 +1,11 @@
+refresco|18.5|30
+papas|22.0|23
+galletas|15.0|35
+agua|12.0|50
+pan|8.5|60
+chocolate|25.0|35
+cafe|30.0|20
+yogurt|20.0|28
+jugos|17.5|22
+tortillas|14.0|16
+botana|27.0|16
